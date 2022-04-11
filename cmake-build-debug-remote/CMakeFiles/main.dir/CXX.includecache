@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/Desktop/PiCar/bcm2835.h
+stdint.h
+-
+
+/home/pi/Desktop/PiCar/main.cpp
+iostream
+-
+bcm2835.h
+/home/pi/Desktop/PiCar/bcm2835.h
+ncurses.h
+-
+

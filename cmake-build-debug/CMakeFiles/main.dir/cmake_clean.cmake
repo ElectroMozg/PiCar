@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/bcm2835.c.obj"
-  "CMakeFiles/main.dir/main.cpp.obj"
-  "libmain.dll.a"
-  "main.exe"
-  "main.exe.manifest"
+  "CMakeFiles/main.dir/Dualshock4.cpp.o"
+  "CMakeFiles/main.dir/bcm2835.c.o"
+  "CMakeFiles/main.dir/main.cpp.o"
+  "main"
   "main.pdb"
 )
 

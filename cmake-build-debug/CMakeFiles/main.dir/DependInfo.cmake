@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/Study/C_C++/PiCar/bcm2835.c" "D:/Study/C_C++/PiCar/cmake-build-debug/CMakeFiles/main.dir/bcm2835.c.obj"
+  "/home/pi/Desktop/PiCar/bcm2835.c" "/home/pi/Desktop/PiCar/cmake-build-debug/CMakeFiles/main.dir/bcm2835.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -13,7 +13,8 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Study/C_C++/PiCar/main.cpp" "D:/Study/C_C++/PiCar/cmake-build-debug/CMakeFiles/main.dir/main.cpp.obj"
+  "/home/pi/Desktop/PiCar/Dualshock4.cpp" "/home/pi/Desktop/PiCar/cmake-build-debug/CMakeFiles/main.dir/Dualshock4.cpp.o"
+  "/home/pi/Desktop/PiCar/main.cpp" "/home/pi/Desktop/PiCar/cmake-build-debug/CMakeFiles/main.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

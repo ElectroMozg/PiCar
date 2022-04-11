@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/Dualshock4.cpp.o"
   "CMakeFiles/main.dir/bcm2835.c.o"
   "CMakeFiles/main.dir/main.cpp.o"
   "main"

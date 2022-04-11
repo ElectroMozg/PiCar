@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/pi/Desktop/PiCar/Dualshock4.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="/home/pi/Desktop/PiCar/Dualshock4.h">
+			<Option target="main"/>
+		</Unit>
 		<Unit filename="/home/pi/Desktop/PiCar/bcm2835.c">
 			<Option target="main"/>
 		</Unit>

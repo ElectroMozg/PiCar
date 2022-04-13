@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/Desktop/PiCar/main.cpp
+/home/pi/Desktop/PiCar/Dualshock4.cpp
+Dualshock4.h
+/home/pi/Desktop/PiCar/Dualshock4.h
 iostream
 -
 iomanip
@@ -23,4 +25,6 @@ sys/ioctl.h
 -
 linux/joystick.h
 -
+
+/home/pi/Desktop/PiCar/Dualshock4.h
 

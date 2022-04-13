@@ -1,0 +1,65 @@
+#include <iostream>
+#include "bcm2835.h"
+#include <ncurses.h>
+
+#define PIN_UP RPI_BPLUS_GPIO_J8_40
+#define PIN_DOWN RPI_BPLUS_GPIO_J8_38
+#define PIN_LEFT RPI_BPLUS_GPIO_J8_37
+#define PIN_RIGHT RPI_BPLUS_GPIO_J8_36
+
+int main()
+{
+    if (!bcm2835_init())
+        return 1;
+    for (int i = 0; i < ; ++i) {
+        
+    }
+    // Set the pin to be an output
+    bcm2835_gpio_fsel(PIN_UP, BCM2835_GPIO_FSEL_OUTP);
+    bcm2835_gpio_fsel(PIN_DOWN, BCM2835_GPIO_FSEL_OUTP);
+    bcm2835_gpio_fsel(PIN_LEFT, BCM2835_GPIO_FSEL_OUTP);
+    bcm2835_gpio_fsel(PIN_RIGHT, BCM2835_GPIO_FSEL_OUTP);
+    initscr();
+    noecho();
+    unsigned choice = 0; //Выбор пользователя
+    curs_set(0); //"Убиваем" курсор
+    //Включаем режим удобной работы с функциональными клавишами, другими словами KEY_UP и KEY_DOWN без этого не работали бы
+    keypad(stdscr, true);
+    printw("Start\n");
+    while ( true )
+    {
+
+        //Получаем нажатие пользователя
+        switch ( getch() )
+        {
+            case'w':
+                bcm2835_gpio_write(PIN_UP, HIGH);
+                bcm2835_gpio_write(PIN_DOWN, LOW);
+                clear();
+                printw("Go UP\n");
+                break;
+            case 's':
+                bcm2835_gpio_write(PIN_DOWN, HIGH);
+                bcm2835_gpio_write(PIN_UP, LOW);
+                clear();
+                printw("Go DOWN\n");
+                break;
+            case'a':
+                bcm2835_gpio_write(PIN_LEFT, HIGH);
+                bcm2835_gpio_write(PIN_RIGHT, LOW);
+                clear();
+                printw("Go LEFT\n");
+                break;
+            case 'd':
+                bcm2835_gpio_write(PIN_RIGHT, HIGH);
+                bcm2835_gpio_write(PIN_LEFT, LOW);
+                clear();
+                printw("Go RIGHT\n");
+                break;
+        }
+    }
+
+    endwin();
+    return 0;
+
+}

@@ -4,5 +4,8 @@
 CMakeFiles/main.dir/bcm2835.c.o
  /home/pi/Desktop/PiCar/bcm2835.c
  /home/pi/Desktop/PiCar/bcm2835.h
+CMakeFiles/main.dir/Dualshock4.cpp.o
+ /home/pi/Desktop/PiCar/Dualshock4.cpp
+ /home/pi/Desktop/PiCar/Dualshock4.h
 CMakeFiles/main.dir/main.cpp.o
  /home/pi/Desktop/PiCar/main.cpp

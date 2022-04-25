@@ -8,10 +8,10 @@
 
 class CarDriver {
 private:
-    const int pinGas = RPI_BPLUS_GPIO_J8_40;
-    const int pinReverse = RPI_BPLUS_GPIO_J8_38;
-    const int pinTurnLeft = RPI_BPLUS_GPIO_J8_37;
-    const int pinTurnRight = RPI_BPLUS_GPIO_J8_36;
+    int pinGas;
+    int pinReverse;
+    int pinTurnLeft;
+    int pinTurnRight;
 public:
 
     CarDriver();

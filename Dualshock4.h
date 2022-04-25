@@ -22,6 +22,7 @@ private:
     bool keyRight;
     bool keyUp;
     bool keyDown;
+    bool keyCross;
     vector<char> joy_button;
     vector<int> joy_axis;
 public:
@@ -34,6 +35,8 @@ public:
     bool getKeyUp();
 
     bool getKeyDown();
+
+    bool getKeyCross();
 
     void readState();
 

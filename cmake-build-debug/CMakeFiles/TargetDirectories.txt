@@ -1,3 +1,3 @@
-/home/pi/Desktop/PiCar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/pi/Desktop/PiCar/cmake-build-debug/CMakeFiles/main.dir
-/home/pi/Desktop/PiCar/cmake-build-debug/CMakeFiles/edit_cache.dir
+/tmp/PiCar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/tmp/PiCar/cmake-build-debug/CMakeFiles/main.dir
+/tmp/PiCar/cmake-build-debug/CMakeFiles/edit_cache.dir

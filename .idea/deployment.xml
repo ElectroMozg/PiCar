@@ -2,16 +2,14 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
-      <paths name="Remote Host (4fa033a0-11bd-4762-b6ea-12132f0c9806)">
+      <paths name="Remote Host (cbc0038d-13d0-4c3e-988d-20bdb7e576a5)">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/pi/Desktop/PiCar" local="$PROJECT_DIR$" />
+            <mapping deploy="/tmp/PiCar" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote" />
           </excludedPaths>
         </serverdata>
       </paths>

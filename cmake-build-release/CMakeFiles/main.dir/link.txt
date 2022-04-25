@@ -1,0 +1,1 @@
+/usr/bin/c++   -static-libstdc++ -static-libgcc -O3 -DNDEBUG   CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/bcm2835.c.o CMakeFiles/main.dir/Dualshock4.cpp.o CMakeFiles/main.dir/CarDriver.cpp.o  -o main  -lncurses 

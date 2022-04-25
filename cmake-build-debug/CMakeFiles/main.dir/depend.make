@@ -7,5 +7,6 @@ CMakeFiles/main.dir/bcm2835.c.o: ../bcm2835.h
 CMakeFiles/main.dir/Dualshock4.cpp.o: ../Dualshock4.cpp
 CMakeFiles/main.dir/Dualshock4.cpp.o: ../Dualshock4.h
 
+CMakeFiles/main.dir/main.cpp.o: ../Dualshock4.h
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 

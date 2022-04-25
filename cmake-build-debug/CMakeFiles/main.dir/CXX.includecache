@@ -6,25 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/Desktop/PiCar/Dualshock4.cpp
-Dualshock4.h
 /home/pi/Desktop/PiCar/Dualshock4.h
-iostream
--
-iomanip
--
 vector
 -
-cstdio
--
-fcntl.h
--
-unistd.h
--
-sys/ioctl.h
--
-linux/joystick.h
--
 
+/home/pi/Desktop/PiCar/main.cpp
+iostream
+-
+Dualshock4.h
 /home/pi/Desktop/PiCar/Dualshock4.h
 

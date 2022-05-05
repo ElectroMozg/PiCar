@@ -123,6 +123,33 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+Driver.o: Driver.cpp.o
+
+.PHONY : Driver.o
+
+# target to build an object file
+Driver.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Driver.cpp.o
+.PHONY : Driver.cpp.o
+
+Driver.i: Driver.cpp.i
+
+.PHONY : Driver.i
+
+# target to preprocess a source file
+Driver.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Driver.cpp.i
+.PHONY : Driver.cpp.i
+
+Driver.s: Driver.cpp.s
+
+.PHONY : Driver.s
+
+# target to generate assembly for a file
+Driver.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Driver.cpp.s
+.PHONY : Driver.cpp.s
+
 Dualshock4.o: Dualshock4.cpp.o
 
 .PHONY : Dualshock4.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... edit_cache"
+	@echo "... Driver.o"
+	@echo "... Driver.i"
+	@echo "... Driver.s"
 	@echo "... Dualshock4.o"
 	@echo "... Dualshock4.i"
 	@echo "... Dualshock4.s"

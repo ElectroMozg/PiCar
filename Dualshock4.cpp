@@ -44,6 +44,9 @@ bool Dualshock4::getKeyDown() {
     return keyDown;
 }
 
+bool Dualshock4::getKeyCross(){
+    return keyCross;
+}
 void Dualshock4::readState() {
     js_event js;
 
@@ -81,6 +84,14 @@ void Dualshock4::readState() {
         keyLeft = false;
         keyRight = false;
     }
+
+
+    if(joy_button[0] >0){
+        keyCross = true;
+    }else{
+        keyCross = false;
+    }
+
 
 
     /*

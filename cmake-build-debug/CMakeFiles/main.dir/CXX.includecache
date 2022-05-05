@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/Desktop/PiCar/Dualshock4.h
-vector
--
+/home/pi/Desktop/PiCar/Driver.cpp
+Driver.h
+/home/pi/Desktop/PiCar/Driver.h
+bcm2835.h
+/home/pi/Desktop/PiCar/bcm2835.h
 
-/home/pi/Desktop/PiCar/main.cpp
-iostream
+/home/pi/Desktop/PiCar/Driver.h
+
+/home/pi/Desktop/PiCar/bcm2835.h
+stdint.h
 -
-Dualshock4.h
-/home/pi/Desktop/PiCar/Dualshock4.h
 

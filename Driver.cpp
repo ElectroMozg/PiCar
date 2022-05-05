@@ -1,43 +1,47 @@
 //
-// Created by Alex on 4/14/2022.
+// Created by Alex on 5/5/2022.
 //
 
-#include "CarDriver.h"
+#include "Driver.h"
 #include "bcm2835.h"
 
-CarDriver::CarDriver() {
+Driver::Driver() {
     bcm2835_init();
+    pinGas = RPI_BPLUS_GPIO_J8_08;
+    pinReverse = RPI_BPLUS_GPIO_J8_16;
+    pinTurnLeft = RPI_BPLUS_GPIO_J8_18;
+    pinTurnRight = RPI_BPLUS_GPIO_J8_10;
     bcm2835_gpio_fsel(pinGas, BCM2835_GPIO_FSEL_OUTP);
     bcm2835_gpio_fsel(pinReverse, BCM2835_GPIO_FSEL_OUTP);
     bcm2835_gpio_fsel(pinTurnRight, BCM2835_GPIO_FSEL_OUTP);
     bcm2835_gpio_fsel(pinTurnLeft, BCM2835_GPIO_FSEL_OUTP);
 }
 
-void CarDriver::gas() {
+void Driver::gas() {
     bcm2835_gpio_write(pinGas, HIGH);
     bcm2835_gpio_write(pinReverse, LOW);
 }
 
-void CarDriver::brake() {
+void Driver::brake() {
     bcm2835_gpio_write(pinGas, LOW);
     bcm2835_gpio_write(pinReverse, LOW);
 }
 
-void CarDriver::reverse() {
+void Driver::reverse() {
     bcm2835_gpio_write(pinGas, LOW);
     bcm2835_gpio_write(pinReverse, HIGH);
 }
 
-void CarDriver::turnLeft() {
-    bcm2835_gpio_write(turnLeft(), HIGH);
+void Driver::turnLeft() {
+    bcm2835_gpio_write(pinTurnLeft, HIGH);
     bcm2835_gpio_write(pinTurnRight, LOW);
 }
 
-void CarDriver::turnRight() {
+void Driver::turnRight() {
     bcm2835_gpio_write(pinTurnRight, HIGH);
-    bcm2835_gpio_write(turnLeft, LOW);
+    bcm2835_gpio_write(pinTurnLeft, LOW);
 }
 
-CarDriver::~CarDriver() {
+Driver::~Driver() {
     bcm2835_close();
 }

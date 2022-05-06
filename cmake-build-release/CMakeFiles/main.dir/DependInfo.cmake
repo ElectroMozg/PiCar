@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/tmp/tmp.vareJGlEEv/bcm2835.c" "/tmp/tmp.vareJGlEEv/cmake-build-debug/CMakeFiles/main.dir/bcm2835.c.o"
+  "/tmp/PiCar/bcm2835.c" "/tmp/PiCar/cmake-build-release/CMakeFiles/main.dir/bcm2835.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -13,9 +13,9 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/tmp/tmp.vareJGlEEv/Driver.cpp" "/tmp/tmp.vareJGlEEv/cmake-build-debug/CMakeFiles/main.dir/Driver.cpp.o"
-  "/tmp/tmp.vareJGlEEv/Dualshock4.cpp" "/tmp/tmp.vareJGlEEv/cmake-build-debug/CMakeFiles/main.dir/Dualshock4.cpp.o"
-  "/tmp/tmp.vareJGlEEv/main.cpp" "/tmp/tmp.vareJGlEEv/cmake-build-debug/CMakeFiles/main.dir/main.cpp.o"
+  "/tmp/PiCar/CarDriver.cpp" "/tmp/PiCar/cmake-build-release/CMakeFiles/main.dir/CarDriver.cpp.o"
+  "/tmp/PiCar/Dualshock4.cpp" "/tmp/PiCar/cmake-build-release/CMakeFiles/main.dir/Dualshock4.cpp.o"
+  "/tmp/PiCar/main.cpp" "/tmp/PiCar/cmake-build-release/CMakeFiles/main.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

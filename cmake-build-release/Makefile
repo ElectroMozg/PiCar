@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/tmp.vareJGlEEv
+CMAKE_SOURCE_DIR = /tmp/PiCar
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/tmp.vareJGlEEv/cmake-build-debug-remote
+CMAKE_BINARY_DIR = /tmp/PiCar/cmake-build-release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.vareJGlEEv/cmake-build-debug-remote/CMakeFiles /tmp/tmp.vareJGlEEv/cmake-build-debug-remote/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/PiCar/cmake-build-release/CMakeFiles /tmp/PiCar/cmake-build-release/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.vareJGlEEv/cmake-build-debug-remote/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/PiCar/cmake-build-release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-Driver.o: Driver.cpp.o
+CarDriver.o: CarDriver.cpp.o
 
-.PHONY : Driver.o
+.PHONY : CarDriver.o
 
 # target to build an object file
-Driver.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Driver.cpp.o
-.PHONY : Driver.cpp.o
+CarDriver.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/CarDriver.cpp.o
+.PHONY : CarDriver.cpp.o
 
-Driver.i: Driver.cpp.i
+CarDriver.i: CarDriver.cpp.i
 
-.PHONY : Driver.i
+.PHONY : CarDriver.i
 
 # target to preprocess a source file
-Driver.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Driver.cpp.i
-.PHONY : Driver.cpp.i
+CarDriver.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/CarDriver.cpp.i
+.PHONY : CarDriver.cpp.i
 
-Driver.s: Driver.cpp.s
+CarDriver.s: CarDriver.cpp.s
 
-.PHONY : Driver.s
+.PHONY : CarDriver.s
 
 # target to generate assembly for a file
-Driver.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Driver.cpp.s
-.PHONY : Driver.cpp.s
+CarDriver.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/CarDriver.cpp.s
+.PHONY : CarDriver.cpp.s
 
 Dualshock4.o: Dualshock4.cpp.o
 
@@ -240,9 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... edit_cache"
-	@echo "... Driver.o"
-	@echo "... Driver.i"
-	@echo "... Driver.s"
+	@echo "... CarDriver.o"
+	@echo "... CarDriver.i"
+	@echo "... CarDriver.s"
 	@echo "... Dualshock4.o"
 	@echo "... Dualshock4.i"
 	@echo "... Dualshock4.s"

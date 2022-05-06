@@ -1,3 +1,3 @@
-/home/pi/Desktop/PiCar/cmake-build-debug-remote/CMakeFiles/rebuild_cache.dir
-/home/pi/Desktop/PiCar/cmake-build-debug-remote/CMakeFiles/main.dir
-/home/pi/Desktop/PiCar/cmake-build-debug-remote/CMakeFiles/edit_cache.dir
+/tmp/tmp.vareJGlEEv/cmake-build-debug-remote/CMakeFiles/rebuild_cache.dir
+/tmp/tmp.vareJGlEEv/cmake-build-debug-remote/CMakeFiles/main.dir
+/tmp/tmp.vareJGlEEv/cmake-build-debug-remote/CMakeFiles/edit_cache.dir
